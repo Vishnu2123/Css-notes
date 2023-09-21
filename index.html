@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS NOTCE</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <h2>Css Notes</h2>
+    font awasome and cdn font awasome
+    Univarsal selector all code apply
+    <p class="que">1. What is css</p>
+    <p>Ans=> css casecadding style sheet <br>CSS describes how HTML elements are to be displayed on screen, paper, or in other media <br>
+        CSS saves a lot of work. It can control the layout of multiple web pages all at once <br>
+        External stylesheets are stored in CSS files
+        </p>
+    <p class="que">2. What is css type</p>
+    <p>
+      Ans=> Inline- by using the style attribute inside HTML elements <br>
+      Internal- by using a style element in the head section <br>
+      External- by using a link element to link to an external CSS file.
+    </p>
+    <p class="que">3.what is difference by Class vs ID</p>
+    <p>
+      Ans=> class basically multiple use karte hai example: class=" name age
+      surname" <br />
+      Id is unic id is not use multiple
+    </p>
+    <p class="que">4. css Text formating</p>
+    <p>
+      Ans:=>(i) font-size=> larger, x-larger,and px value <br />(ii)
+      font-weight=> bold,bolder,lighter <br />(iii) font-style=>
+      italic,normal,oblique <br />font-family=> sarif,san-sarif
+      arial,roman,cooriar New,gergia <br />
+      google-font <br />
+      line-height <br />letter-spacing <br />
+      text-decoration:=> none,overline,underline,line through ,wavy,
+      solid,dashed, dotted, double <br />text-decoration-thickness(px value)
+    </p>
+    <p class="que">5. What is box model ?</p>
+    <p>
+      Ans=> The css box model is a container that content multiple propartice
+      incuding border, margin,padding,and the content itself.it is used to
+      create the design and layout of web pages <br />content: This contains the actual data in the form of text, images, or other media forms and it can be sized using the width & height property. <br>
+      padding: This property is used to create space around the element, inside any defined border. <br>
+      border: This property is used to cover the content & any padding, & also allows setting the style, color, and width of the border.(solid,dased,dotted,grove,ridge) <br> 
+      margin: This property is used to create space around the element ie., around the border area. <br> <table border="2px">
+        The tabular difference between Padding and Margin.
+        <tr>
+          <th>Margin</th>
+          <th>Padding</th>
+        </tr>
+        <tr>
+          <td>1.The outer space of an element i.e. margin is the space outside the border.</td>
+          <td>1.The inner space of an element i.e.padding is space inside the element’s border.</td>
+        </tr>
+        <tr>
+          <td>2.It can be negative or any float number.	</td>
+          <td>2.It does not allow negative values.</td>
+        </tr>
+        <tr>
+          <td>3.We can set the margin to auto.</td>
+          <td>3.We cannot set the padding to auto.</td>
+        </tr>
+        <tr>
+          <td>4.Styling of an element such as background color does not affect the margin.</td>
+        <td>4.Padding is affected by the styling of an element, such as background color.</td>
+        </tr>
+      </table>
+      
+    </p>
+    <p class="que">6. What is box sizing</p>
+    <p>
+      Ans=> The box-sizing property in CSS defines how the user should calculate the total width and height of an element i.e padding and borders, are to be included or not. <br>
+
+      Syntax: <br> <br>
+      
+      box-sizing: content-box|border-box; <br> <br>
+      
+      Property Values: All the properties are described well in the example below. <br> <br>
+      
+      <span class="po"> content-box:</span><br>
+ This is the default value of the box-sizing property. In this mode, the width and height properties include only the content. Border and padding are not included in it i.e if we set an element’s width to 200 pixels, then the element’s content box will be 200 pixels wide, and the width of any border or padding will be added to the final rendered width. <br> <br>      <span class="po"> border-box:</span><br>
+  In this mode, the width and height properties include content, padding, and borders i.e if we set an element’s width to 200 pixels, that 200 pixels will include any border or padding we added, and the content box will shrink to absorb that extra width. This typically makes it much easier to size elements.
+      
+      
+    </p>
+    <p class="que">7. what is background property</p>
+    <p>
+      Ans=> (i) background-position (ii) background (iii) background-image(URL)
+      (iV) background-color (v) background-repeat(no-repeat) (vi)
+      background-size (cover) (vii) background-clip (border-box ,content-box
+      ,padding-box) (viii) background-attechment (scroll ,fixed)
+    </p>
+    <p class="que">8. what is display property</p>
+    <p>
+      Ans=> The display property specifies the display behavior (the type of
+      rendering box) of an element.It has 6 values:- block , inline ,
+      inline-block , none. flex ,grid Every HTML element has a default display
+      value, depending on what type of element it is. <br />
+      (i) Block elements:- A block-level element always starts on a new line,
+      and the browsers automatically add some space (a margin) before and after
+      the element.A block-level element always takes up the full width available
+      (stretches out to the left and right as far as it can). <br />
+      (ii) Inline Elements :- An inline element does not start on a new line.An
+      inline element only takes up as much width as necessary.We can’t define
+      width and height of inline elements <br />
+
+      (iii)Inline Block :- The display value of inline-block works similarly to
+      inline with one exception: the height and width of that element become
+      modifiable. <br />
+      (iv) None :- Display:none is used to hide the elements.Example with all
+      display items:-
+    </p>
+    <p class="que">9. what is display flex and property</p>
+    <p>
+      Ans=> The CSS flex Layout Module offers a flex-based layout system, with
+      rows and columns, making it easier to design web pages without having to
+      use floats and positioning. (i) display-flex(parent property) <br />
+      (ii) flex-dairection(child property) i. row ii. colums
+      ,row-revers,colum-revers <br />(iii) flex-wrap :- the flex wrap css
+      property sets whether flex item are fofced onto one line or can wrap onto
+      multiple line(warp,no-warp,warp-revers) <br> (iv) flex-gap =>Gap is the
+      shorthand for row gap and column gap <br> (v) justify-content (horizently-work center,flex- start, flex-end, space around,space-betwen,space-evenly) <br> (vi) Align-item (vertically) <br>(vii)align-content <br>(viii) flex-flow <br>(ix) flex-grow <br>(x) flex-shrink <br>(xi) flex-basis
+    </p>
+    <p class="que">10.what is position</p>
+    <p>Ans=>The position property specifies the type of positioning method used for an element (static, relative, fixed, absolute or sticky). <br>
+      There are five different position values:- <br>
+      Static  <br>
+      Relative<br>
+      Fixed<br>
+      Absolute<br>
+      Sticky<br>
+      Elements are then positioned using the top, bottom, left, and right properties. However, these properties will not work unless the position property is set first. They also work differently depending on the position value.
+      
+     <br>
+     
+     <span class="po">position: static</span> <br>
+HTML elements are positioned static by <br>
+Static positioned elements are not affected by the top, bottom, left, and right properties.
+An element with position: static is not positioned in any special way; it is always positioned according to the normal flow of the page. <br>
+<br><span class="po">Position: relative</span> <br>
+An element with position: relative; is positioned relative to its normal position.
+Setting the top, right, bottom, and left properties of a relatively-positioned element will cause it to be adjusted away from its normal position. Other content will not be adjusted to fit into any gap left by the <br>
+<span class="po">Position: absolute</span> <br>
+An element with position: absolute; is positioned relative to the nearest positioned ancestor (instead of positioned relative to the viewport, like fixed).
+However; if an absolute positioned element has no positioned ancestors, it uses the document body, and moves along with page scrolling.
+[Note]: Absolute positioned elements are removed from the normal flow, and can overlap elements.Everything works as if the element whose position is absolute doesn’t even <br><span class="po">position:fixed </span><br>
+An element with position: fixed; is positioned relative to the viewport, which means it always stays in the same place even if the page is scrolled. The top, right, bottom, and left properties are used to position the element.
+A fixed element does not leave a gap in the page where it would normally have been located.Fixed positioned elements are removed from the normal flow.
+Fixed positioned elements are always fixed based on the entire HTML element and its parent doesn’t <br><span class="po">Position: sticky </span><br>
+An element with position: sticky; is positioned based on the user's scroll position.
+A sticky element toggles between relative and fixed, depending on the scroll position. 
+In other word , position : sticky acts as relative fixed based on how the user is scrolling. <br>
+<span class="po">Z- index </span><br>
+The z-index property specifies the stack order of an element. <br>
+An element with greater stack order is always in front of an element with a lower stack order. <br>
+Note: z-index only works on positioned elements (position: absolute, position: relative, position: fixed, or position: sticky) 
+
+<br>
+ </p>
+ Difference between position: fixed and position: sticky property:
+
+
+ <table border="1">
+  <tr>
+    <th>sticky</th>
+    <th>fixed</th>
+  </tr>
+  <tr>
+    <td>Element with position: sticky property can scroll to an offset value provided by the user</td>
+    <td>Element with position: fixed property is fixed to the viewport and doesn’t move irrespective of scrolling.</td>
+  </tr>
+  <tr>
+    <td>Element with position: sticky property leaves the viewport when its parent element scrolls off the viewport.</td>
+    <td>Element with position: fixed property never leaves the viewport position it was fixed to.</td>
+  </tr>
+  <tr>
+    <td>This property is only supported by all modern browsers</td>
+    <td>This property is supported by all the browsers.</td>
+  </tr>
+  <tr>
+    <td>Element with position: sticky property does effect the other element’s flow in the page ie., it will take the additional space.</td>
+    <td>Element with position: fixed property does not effect the other element’s flow on the page ie it does not capture additional space</td>
+  </tr>
+ </table>
+ <p class="que"> diference between position relative and position absolute</p>
+ <p>Ans=> position relative: position relative is a parent element <br> and positon absolute:is a child element <br> and relative move to box not fill space <br>and position absolute move to fill space <br>position relative another box is not effected <br>position absolute another box is effected  </p>
+ <p class="que"> what is box shadow and text shadow</p>
+ <p>Ans=> Box and text shadow is a four value (x,y,blur,spreat(text shadow is not available in value spered ),color) <br> positive value=> right,bottom <br> left,top (blur value is not workof the negetive value) <br>x,y value 0px define karke and blur,spered property is used to charo taraf aa jata hai</p> 
+ <p class="que"> what is css list</p>
+ <p>Ans=> list-style-type(ul is type) <br>list-style-position(inside,outside) <br>list-style-image(url)</p>
+ <p class="que"> What is css table</p>
+ <p>Ans=> border-collepse (cell to sperate border remove) <br> border-spacing(cellpadding) <br> vertically-align( top ,bottom,middle) <br> text-align(horryzently) <br> empty-cell(show,hide) ,<br>width:100%</p>
+ <p class="que">
+  what is folat and clear property
+ </p>  
+ <p>Ans=> CSS FLOAT
+  The CSS float property specifies how an element should float.The float property is used for positioning and formatting content e.g. let an image float left to the text in a container.
+  The float property can have one of the following values:
+  left - The element floats to the left of its container
+  right - The element floats to the right of its container
+  none - The element does not float (will be displayed just where it occurs in the text). This is default  <br>clear-property=>Clear Property
+  When we use the float property, and we want the next element below (not on right or left), we will have to use the clear property.
+  The clear property specifies what should happen with the element that is next to a floating element.
+  The clear property can have one of the following values:
+  none - The element is not pushed below left or right floated elements. This is default
+  left - The element is pushed below left floated elements
+  right - The element is pushed below right floated elements
+  both - The element is pushed below both left and right floated elements
+  inherit - The element inherits the clear value from its parent
+  When clearing floats, you should match the clear to the float: If an element is floated to the left, then you should clear to the left. Your floated element will 
+  continue to float, but the cleared element will appear below it on the web page.---float-left and clear-left,float-right,clear-right,clear-both</p>
+ <p class="que">liner and radial and conic gradient</p>
+ <p>Ans=>  Linear gradient:- To create a linear gradient you must define at least two color stops. Color stops are the colors you want to render smooth transitions among. You can also set a starting point and a direction (or an angle) along with the gradient effect.
+
+  Syntax:- 
+  background-image: linear-gradient(direction, color-stop1, color-stop2, ...);
+  Direction - Top to Bottom (this is default)
+   <br>Radial Gradient :- The radial-gradient() function sets a radial gradient as the background image.A radial gradient is defined by its center.To create a radial gradient you must define at least two color stops.
+   CSS Syntax
+   background-image: radial-gradient(shape size at position, start-color, ..., last-color);
+  <br> Conic Gradient :- A conic gradient is a gradient with color transitions rotated around a center point.To create a conic gradient you must define at least two colors.
+</p>
+<p class="que"> visibility </p>
+<p>Ans=> Visibility :- The visibility property specifies whether or not an element is visible.
+  [Note]: Hidden elements take up space on the page. Use the display property to both hide and remove an element from the document layout!
+  CSS syntax :- visibility: visible|hidden;</p>
+
+    <p class="que"> grid-css</p>
+    <p class="que">flex and grid difference</p>
+    <p>Ans=> flex:- It is one demensinal don't at the same time and in one container
+      <br>
+      grid:-It is two dimensinal we can adust and access both coloum and row at the same time and in one container
+    </p>
+    <pre>
+    Grid in CSS
+    The CSS Grid Layout Module offers a grid-based layout system, with rows and columns, making it easier to design web pages without having to use floats and positioning.
+    Parent Grid Properties 
+    We write these properties inside parent element
+    Gap in Grid 
+    You can adjust the gap size by using one of the following properties:
+    Column-gap 
+    row-gap
+    gap
+    [Note]: Gap is the shorthand for row gap nad column gap
+    
+    Grid-template-columns(reapeat 3auto)
+    The grid-template-columns property specifies the number (and the widths) of columns in a grid layout.
+    The values are a space separated list, where each value specifies the size of the respective column.
+    Grid-template-rows
+    The grid-template-rows property specifies the number (and the heights) of the rows in a grid layout.
+    The values are a space-separated list, where each value specifies the height of the respective row.
+    
+    
+    Justify-content
+    The justify-content property is used to align the whole grid inside the container.
+    Align-content
+    The align-content property is used to vertically align the whole grid inside the container.
+    Align-items :-
+    Child Properties
+    
+    Justify-self 
+    justify self moves each child in horizontal direction default = stretch
+    
+    Align-self
+    Grid-column
+    Grid-row
+    Grid-area
+    pleace-content
+  </pre>
+    Example :- 
+    </p>
+    <p class="que">@media screen and (min-width) and (max-width){} syntax space should be same </p>
+    <p class="que"> Transition</p>
+    <p>CSS transitions allow you to change property values smoothly, over a given duration.
+      <br>In this chapter you will learn about the following properties:
+    </p>
+    <pre> transition-duration:- (2s) kitna fast work karega
+      transition-deley:- (2s) kitna let work karega
+      transitions-timing-function:- 
+      linear:- same spered
+      ease:- slow start - fast - slow end
+      ease-in:-slow start - end speed
+      ease-out:-fast start - slow end
+      ease-in-out:-slow start - slow end
+    </pre>
+    <p class="que"> transform</p>
+    <pre>The transform property applies a 2D or 3D transformation to an element.
+       This property allows you to 
+      rotated:-(90deg)
+          scale:-(width-height +,-)
+          skew:-(tirch)
+          translate:-(move box)x(-10deg left move box)
+          x(10deg right move box)
+          y(-10deg top move box)
+          y(10deg bottom move box)
+    </pre>
+    <p class="que"> Animation</p>
+    <pre>An animation lets an element gradually change from one style to another.You can change as many 
+      CSS properties you want, as many times as you want.To use CSS animation, you must first specify some keyframes 
+      for the animation.Keyframes hold what styles the element will have at certain times.
+    </pre>
+    <p class="que"> keyframe</p>
+    <pre>
+      it use to define set of aimation(intermidet steps) of various point in the animationit 
+       it will give more control to our animation and it specifies different types of animation at intermidet steps
+    </pre>
+    <pre>animation-duration:- (2s) kitna fast work karega
+      animation-deley:- (2s) kitna let ho ke work karega
+      animation-timing-function:- 
+      linear:- same spered
+      ease:- slow start - fast - slow end
+      ease-in:-slow start - end speed
+      ease-out:-fast start - slow end
+      ease-in-out:-slow start - slow end
+      animation-direction 
+      normal forword , revers alternate(front to bake rotate) , alternate-revers(bake to front rotate)
+      itraction-count
+      infinate (continue work)
+      numric (value jitni hogi utni hi bar work karega)
+      fill-mode
+      none forwords(first to end end)
+           backwords(first to end first)
+      </pre>
+  <p class="que"> animation and trasition property difference</p>
+  <pre>
+    Difference between transitions and animations:
+
+    
+    
+    CSS TRANSITIONS	
+    Can only move from initial to final state — no intermediate steps
+Can only run once
+Require a trigger to run (like mouse hover)
+Run forwards when triggered and in reverse when trigger is removed
+Easier to use with JavaScript
+Best for creating a simple change from one state to another
+
+CSS ANIMATIONS
+Can move from initial to final state, with intermediate steps in between
+Can loop infinitely thanks to animation-iteration-count property
+Can be triggered but can also run automatically
+Can run forwards, in reverse, or alternate directions
+More difficult to use with JavaScript
+Best for creating a complex series of movements
+
+    
+  </pre>
+   <p class="que"> css selector</p>
+   <p>
+    In CSS, selectors are used to target the HTML elements on our web pages that we want to style    </p>
+   <pre> there are five categery in css selectors 
+   1.  combinater
+   The final selectors we will look at are called combinators, because they combine other selectors 
+   in a way that gives them a useful relationship to each other and the location of content in the document.   
+    Ans- 
+    The descendant selector matches all elements that are descendants of a specified element.
+               1. desendent selector (space select the  all child and graand child)
+               2.child selector (child selector is only select the direct child(>))
+               3.Adjacant sibling selector (only sibling (+))
+               4.General sibling selector (all sibling select (~))
+   </pre>
+   2. pseudo- class-selectors-
+   :link(unvisited) ,visited , hover(animation-play-state: paused;) , active(click to work) ,focus (couser to click and selected element and next jagah click karne pr hatega , first-child ,last-child ,nth-child(even-2n+2,odd 2n+1) numbric) ,
+   3. paseudo element selectors ( :: after,before,maker(bullat point target(li:nth-child(even)::maker)))
+   4. Attributes selectors 
+   5.simple selectors (class ,id ,univarsal ,element(The element selector selects HTML elements based on the element name.
+
+   ),grouping)
+</body>
+</html>
